@@ -1,0 +1,20 @@
+import random
+
+# Pobranie informacji od użytkownika
+# (lub generowanie losowej długości trasy)
+if input("Czy chcesz podać długość trasy samodzielnie? (t/n): ").lower() == 't':
+    droga = float(input("Podaj długość trasy w km: "))
+else:
+    droga = random.randint(1, 100000)
+    print(f"Losowo wygenerowana długość trasy: {droga} km")
+
+srednie_spalanie = float(input("Podaj średnie spalanie samochodu (l/100km): "))
+cena_paliwa = 6.5  # Cena paliwa w złotówkach za litr
+
+# Obliczenia
+zuzyte_paliwo = (srednie_spalanie / 100) * droga
+koszty_podrozy = zuzyte_paliwo * cena_paliwa
+
+# Wyświetlenie wyników
+print("\nPrzewidziane zużycie paliwa:", zuzyte_paliwo, "litry")
+print("Szacowane koszty podróży:", koszty_podrozy, "zł")
