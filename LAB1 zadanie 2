@@ -1,0 +1,10 @@
+# Pobranie litery od użytkownika
+litera = input("Podaj literę: ")
+
+# Sprawdzenie, czy litera jest duża czy mała
+if litera.isupper():
+    print("Podana litera jest duża.")
+elif litera.islower():
+    print("Podana litera jest mała.")
+else:
+    print("To nie jest litera.")
