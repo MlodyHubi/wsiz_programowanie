@@ -1,0 +1,24 @@
+# Pobranie danych od użytkownika
+liczba1 = float(input("Podaj pierwszą liczbę: "))
+operacja = input("Podaj operację (+, -, *, /, **): ")
+liczba2 = float(input("Podaj drugą liczbę: "))
+
+# Wykonanie odpowiedniej operacji
+if operacja == '+':
+    wynik = liczba1 + liczba2
+elif operacja == '-':
+    wynik = liczba1 - liczba2
+elif operacja == '*':
+    wynik = liczba1 * liczba2
+elif operacja == '/':
+    if liczba2 != 0:
+        wynik = liczba1 / liczba2
+    else:
+        wynik = "Błąd! Nie można dzielić przez zero."
+elif operacja == '**':
+    wynik = liczba1 ** liczba2
+else:
+    wynik = "Nieznana operacja."
+
+# Wyświetlenie wyniku
+print(f"Wynik: {wynik}")
