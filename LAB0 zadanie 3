@@ -1,0 +1,11 @@
+# Pobranie długości boków od użytkownika
+x = float(input("Podaj długość boku prostokąta x: "))
+y = float(input("Podaj długość boku prostokąta y: "))
+
+# Obliczenia
+pole = x * y
+obwod = 2 * (x + y)
+
+# Wyświetlenie wyników
+print("Pole prostokąta: ", pole)
+print("Obwód prostokąta: ", obwod)
