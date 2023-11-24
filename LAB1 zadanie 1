@@ -1,0 +1,13 @@
+# Pobranie wieku od użytkownika
+wiek = int(input("Podaj wiek: "))
+
+# Określenie ceny biletu na podstawie wieku
+if wiek < 4:
+    cena_biletu = 0
+elif 4 <= wiek <= 18:
+    cena_biletu = 10
+else:
+    cena_biletu = 20
+
+# Wyświetlenie wyniku
+print(f"Cena biletu dla osoby o wieku {wiek} lat wynosi: {cena_biletu} zł")
