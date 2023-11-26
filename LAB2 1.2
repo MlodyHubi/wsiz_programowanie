@@ -1,0 +1,13 @@
+def funkcja_kwadratowa(x):
+    return 2 * x**2 - 5 * x - 8
+
+x_poczatek = -4
+x_koniec = 4
+krok = 0.5
+
+print(" x    |    y")
+print("-------------")
+for x in range(int(x_poczatek * 2), int((x_koniec + krok) * 2), int(krok * 2)):
+    x /= 2
+    y = funkcja_kwadratowa(x)
+    print(f"{x:.1f}  |  {y:.2f}")
