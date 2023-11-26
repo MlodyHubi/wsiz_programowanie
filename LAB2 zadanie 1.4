@@ -1,0 +1,12 @@
+liczba1 = int(input("Podaj pierwszą liczbę całkowitą: "))
+liczba2 = int(input("Podaj drugą liczbę całkowitą: "))
+
+mniejsza_liczba = min(liczba1, liczba2)
+wieksza_liczba = max(liczba1, liczba2)
+
+print(f"Liczby parzyste od {mniejsza_liczba} do {wieksza_liczba} to:")
+for liczba in range(mniejsza_liczba, wieksza_liczba + 1):
+    if liczba % 2 == 0:
+        print(liczba)
+    else:
+        continue
