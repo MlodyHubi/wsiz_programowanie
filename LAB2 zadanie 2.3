@@ -1,0 +1,11 @@
+# Pobieranie wysokości choinki od użytkownika
+wysokosc_choinki = int(input("Podaj wysokość choinki: "))
+
+# Generowanie choinki
+for i in range(1, wysokosc_choinki + 1):
+    # Wstawienie spacji przed gwiazdkami
+    print(" " * (wysokosc_choinki - i) + "* " * i)
+
+# Dodatkowy trójkąt odwrócony
+for i in range(1, wysokosc_choinki):
+    print(" " * i + "* " * (wysokosc_choinki - i))
