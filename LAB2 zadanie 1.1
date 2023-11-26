@@ -1,0 +1,12 @@
+# Pobranie dwóch liczb od użytkownika
+liczba1 = int(input("Podaj pierwszą liczbę całkowitą: "))
+liczba2 = int(input("Podaj drugą liczbę całkowitą: "))
+
+# Określenie mniejszej i większej liczby
+mniejsza_liczba = min(liczba1, liczba2)
+wieksza_liczba = max(liczba1, liczba2)
+
+# Wypisanie kolejnych liczb od mniejszej do większej
+print(f"Kolejne liczby od {mniejsza_liczba} do {wieksza_liczba} to:")
+for liczba in range(mniejsza_liczba, wieksza_liczba + 1):
+    print(liczba)
