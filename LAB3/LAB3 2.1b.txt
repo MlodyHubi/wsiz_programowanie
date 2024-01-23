@@ -1,0 +1,2 @@
+count_k = sum(s.count("k") for s in tpl)
+print("Ilość liter 'k' w liście:", count_k)

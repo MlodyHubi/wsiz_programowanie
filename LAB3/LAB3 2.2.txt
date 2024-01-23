@@ -1,0 +1,14 @@
+shopping_list = {}
+while True:
+    item = input("Podaj nazwę artykułu (lub 'koniec' aby zakończyć): ")
+    if item == "koniec":
+        break
+    price = float(input("Podaj cenę artykułu: "))
+    shopping_list[item] = price
+
+print("Twoja lista zakupów:")
+for item, price in shopping_list.items():
+    print(f"{item}: {price:.2f} zł")
+
+total = sum(shopping_list.values())
+print(f"Łączna kwota do zapłaty: {total:.2f} zł")

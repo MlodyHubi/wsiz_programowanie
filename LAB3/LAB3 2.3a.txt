@@ -1,0 +1,11 @@
+bills = {"styczeń": 200.0, "luty": 180.0, "marzec": 220.0, "kwiecień": 240.0, "maj": 260.0}
+
+values = list(bills.values())
+max_value = max(values)
+min_value = min(values)
+sum_value = sum(values)
+avg_value = sum_value / len(values)
+print(f"Maksymalna wartość: {max_value:.2f}")
+print(f"Minimalna wartość: {min_value:.2f}")
+print(f"Suma wartości: {sum_value:.2f}")
+print(f"Średnia wartość: {avg_value:.2f}")

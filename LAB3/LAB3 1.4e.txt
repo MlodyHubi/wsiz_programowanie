@@ -1,0 +1,4 @@
+text1 = input("Podaj pierwszy tekst: ")
+text2 = input("Podaj drugi tekst: ")
+result = text1 + text2
+print("Połączone teksty:", result)
