@@ -1,4 +1,0 @@
-first_name = input("Podaj imię: ")
-last_name = input("Podaj nazwisko: ")
-initials = first_name[0] + last_name[0]
-print("Twoje inicjały to:", initials)

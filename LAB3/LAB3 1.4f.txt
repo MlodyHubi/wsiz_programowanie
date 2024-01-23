@@ -1,6 +1,0 @@
-text1 = input("Podaj pierwszy tekst: ")
-text2 = input("Podaj drugi tekst: ")
-half1 = text1[:len(text1)//2]
-half2 = text2[len(text2)//2:]
-result = half1 + half2
-print("Wynik:", result)

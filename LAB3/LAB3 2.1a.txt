@@ -1,5 +1,0 @@
-n = int(input("Podaj liczbę elementów: "))
-x = int(input("Podaj długość ciągów: "))
-lst = [input(f"Podaj ciąg znaków nr {i+1}: ")[:x] for i in range(n)]
-tpl = tuple(lst)
-print("Ilość znaków w liście:", sum(len(s) for s in tpl))

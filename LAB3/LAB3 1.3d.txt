@@ -1,2 +1,0 @@
-from_tenth = text[9:]
-print("Od dziesiątego do ostatniego znaku to:", from_tenth)

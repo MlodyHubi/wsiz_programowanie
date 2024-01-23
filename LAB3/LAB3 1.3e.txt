@@ -1,2 +1,0 @@
-reverse = text[::-1]
-print("Od końca do początku:", reverse)

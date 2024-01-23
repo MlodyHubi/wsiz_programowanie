@@ -1,2 +1,0 @@
-count_kt = sum(s.count("kt") for s in tpl)
-print("Ilość ciągów znaków 'kt' w liście:", count_kt)

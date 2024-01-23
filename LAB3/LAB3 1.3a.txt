@@ -1,3 +1,0 @@
-text = "Python jest super"
-first_and_last = text[0] + text[-1]
-print("Znak zerowy i ostatni to:", first_and_last)

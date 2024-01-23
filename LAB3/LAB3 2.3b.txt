@@ -1,8 +1,0 @@
-bills = {"styczeń": 200.0, "luty": 180.0, "marzec": 220.0, "kwiecień": 240.0, "maj": 260.0}
-
-last_month = list(bills.values())[-1]
-if last_month > avg_value:
-    print("Zacznij oszczędzać")
-else:
-    print("Jesteś bezpieczny")
-
