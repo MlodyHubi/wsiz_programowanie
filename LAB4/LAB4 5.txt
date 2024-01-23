@@ -1,0 +1,12 @@
+def calculate_bmi(weight, height):
+    bmi = weight / (height ** 2)
+    if bmi < 18.5:
+        print(f"Twoje BMI wynosi {bmi:.2f} i oznacza niedowagę.")
+    elif 18.5 <= bmi < 25:
+        print(f"Twoje BMI wynosi {bmi:.2f} i oznacza wagę prawidłową.")
+    elif 25 <= bmi < 30:
+        print(f"Twoje BMI wynosi {bmi:.2f} i oznacza nadwagę.")
+    else:
+        print(f"Twoje BMI wynosi {bmi:.2f} i oznacza otyłość.")
+
+calculate_bmi(70, 1.75)  # Output: Twoje BMI wynosi 22.86 i oznacza wagę prawidłową.

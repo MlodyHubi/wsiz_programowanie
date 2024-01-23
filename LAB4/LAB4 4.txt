@@ -1,0 +1,11 @@
+def is_positive(x):
+    if x > 0:
+        print(f"Liczba {x} jest dodatnia.")
+    elif x == 0:
+        print(f"Liczba {x} jest równa zero.")
+    else:
+        print(f"Liczba {x} jest ujemna.")
+
+is_positive(5)  # Output: Liczba 5 jest dodatnia.
+is_positive(-2)  # Output: Liczba -2 jest ujemna.
+is_positive(0)  # Output: Liczba 0 jest równa zero.

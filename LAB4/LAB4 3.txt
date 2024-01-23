@@ -1,0 +1,13 @@
+def print_name_and_age(name: str, age: int = 20) -> None:
+    """
+    Wypisuje imię i wiek osoby na ekranie.
+
+    :param name: Imię osoby.
+    :type name: str
+    :param age: Wiek osoby. Domyślnie 20.
+    :type age: int
+    """
+    print(f"Twoje imię to {name}, a Twój wiek to {age} lat.")
+
+print_name_and_age("Jan", 25)
+print(print_name_and_age.__doc__)

@@ -1,0 +1,17 @@
+import math
+
+def calculate_triangle_area(a, b, c):
+    if a <= 0 or b <= 0 or c <= 0:
+        raise ValueError("Bok trójkąta nie może być mniejszy lub równy zero.")
+    elif a + b <= c or a + c <= b or b + c <= a:
+        raise ValueError("Nieprawidłowe długości boków trójkąta.")
+    else:
+        p = (a + b + c) / 2
+        area = math.sqrt(p * (p - a) * (p - b) * (p - c))
+        return area
+
+try:
+    area = calculate_triangle_area(3, 4, 5)
+    print(f"Pole trójkąta wynosi {area:.2f}.")
+except ValueError as e:
+    print(e)
