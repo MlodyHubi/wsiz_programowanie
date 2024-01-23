@@ -1,0 +1,3 @@
+names += ["Klaudia", "Paweł"]
+last_person = names.pop()
+print("Ostatnia osoba na liście to", last_person)

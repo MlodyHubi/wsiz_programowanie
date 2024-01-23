@@ -1,0 +1,4 @@
+names = ["Ala", "Zuza", "Jacek", "Michał"]
+names.sort()
+print("Posortowane alfabetycznie:", names)
+

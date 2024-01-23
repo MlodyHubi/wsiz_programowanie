@@ -1,0 +1,15 @@
+import random
+
+a = random.randint(3, 7)
+b = random.randint(3, 7)
+
+X = set(random.randint(0, 10) for _ in range(a))
+Y = set(random.randint(0, 10) for _ in range(b))
+
+print("Zbiór X:", X)
+print("Zbiór Y:", Y)
+
+if Y.issuperset(X):
+    print("Zbiór Y jest nadzbiorem zbioru X")
+else:
+    print("Zbiór Y nie jest nadzbiorem zbioru X")

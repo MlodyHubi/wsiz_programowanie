@@ -1,0 +1,2 @@
+every_other = text[::2]
+print("Co drugi znak, zaczynając od zerowego to:", every_other)

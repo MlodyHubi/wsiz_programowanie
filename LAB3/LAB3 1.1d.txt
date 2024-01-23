@@ -1,0 +1,3 @@
+names_reversed = list(reversed(names))
+names_doubled = names + names_reversed
+print("Lista po odwróceniu i zdublowaniu:", names_doubled)

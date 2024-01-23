@@ -1,0 +1,2 @@
+names.insert(2, "Tadek")
+print("Lista po dodaniu osoby na pozycji 3:", names)

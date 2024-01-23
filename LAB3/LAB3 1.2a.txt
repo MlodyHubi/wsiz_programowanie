@@ -1,0 +1,3 @@
+text = "Rzeszów jest piękny"
+first_letter = text[0]
+print("Pierwsza litera w tekście to", first_letter)

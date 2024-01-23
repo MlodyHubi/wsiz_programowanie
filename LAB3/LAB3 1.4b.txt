@@ -1,0 +1,2 @@
+age = input("Podaj swój wiek: ")
+print("Twój wiek to:", age)

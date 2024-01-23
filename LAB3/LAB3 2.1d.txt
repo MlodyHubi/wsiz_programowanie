@@ -1,0 +1,3 @@
+s = input("Podaj wartość s: ")
+count_longer = sum(len(s) < len(t) for t in tpl)
+print(f"Ilość ciągów znaków dłuższych niż {s}:", count_longer)
