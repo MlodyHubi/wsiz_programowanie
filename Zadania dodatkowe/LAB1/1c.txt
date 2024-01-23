@@ -1,0 +1,10 @@
+x = float(input("Podaj wartość x: "))
+
+if x > 2:
+    c_x = 2 + x
+elif x == 2:
+    c_x = 8
+else: # for x < 2
+    c_x = abs(x - 4)
+
+print(f"Wartość funkcji dla x={x} wynosi {c_x}")

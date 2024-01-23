@@ -1,0 +1,11 @@
+a = float(input("Podaj wartość a: "))
+b = float(input("Podaj wartość b: "))
+
+if a == 0:
+    if b == 0:
+        print("Równanie jest spełnione dla każdej wartości x.")
+    else:
+        print("Równanie nie ma rozwiązań.")
+else:
+    x = -b / a
+    print(f"Rozwiązanie równania to x = {x}.")

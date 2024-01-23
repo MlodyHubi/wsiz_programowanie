@@ -1,0 +1,12 @@
+def b(x):
+    if x >= 1:
+        return x**3
+    else:
+        return x
+
+# Get user input
+try:
+    x = float(input("Podaj wartość argumentu rzeczywistego x: "))
+    print(f"Wartość funkcji b(x) dla x={x} wynosi {b(x)}")
+except ValueError:
+    print("Podana wartość nie jest liczbą rzeczywistą.")

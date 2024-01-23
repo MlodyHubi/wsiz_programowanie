@@ -1,0 +1,12 @@
+zdanie = input("Podaj zdanie: ")
+
+zdanie = zdanie.lower()
+
+litery = list(zdanie)
+
+litery = sorted(litery)
+
+litery = set(litery)
+
+print("Litery w zdaniu w kolejności alfabetycznej:")
+print("".join(litery))

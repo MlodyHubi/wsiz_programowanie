@@ -1,0 +1,22 @@
+ciag = input("Podaj pięć cyfr rozdzielonych przecinkiem: ")
+
+cyfry = ciag.split(",")
+
+if len(cyfry) == 5:
+  print("Liczba cyfr była pięć.")
+else:
+  print("Liczba cyfr nie była pięć.")
+  break
+
+cyfry = set(cyfry)
+
+import random
+
+wylosowana = random.choice(cyfry)
+if wylosowana == min(cyfry):
+  print("Wylosowana cyfra jest najmniejszą z podanych cyfr.")
+elif wylosowana == max(cyfry):
+  print("Wylosowana cyfra jest największą z podanych cyfr.")
+else:
+  pass
+

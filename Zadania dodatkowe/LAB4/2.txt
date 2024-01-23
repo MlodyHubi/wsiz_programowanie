@@ -1,0 +1,6 @@
+def wyswietl_parametry(*args):
+  for parametr in args:
+    print(parametr)
+def znajdz_maksimum(*args):
+  maksimum = max(args)
+  return maksimum

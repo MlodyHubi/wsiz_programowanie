@@ -1,0 +1,18 @@
+import collections
+
+ciag = input("Podaj ciąg znaków: ")
+
+licznik = collections.Counter(ciag)
+
+wynik = []
+
+for znak in ciag:
+  if licznik[znak] > 1:
+    wynik.append("@")
+  else:
+    wynik.append(znak)
+
+wynik = "".join(wynik)
+
+print("Ciąg znaków po zamianie powtarzających się znaków na @:")
+print(wynik)

@@ -1,0 +1,15 @@
+przeciwnicy = [(0,1), (2,3), (2,4), (3,4)]
+
+monety = [(1,1), (2,0), (3,3), (5,3)]
+
+for y in range(5):
+  for x in range(6):
+    if (x,y) in przeciwnicy:
+      print("x", end="")
+    elif (x,y) in monety:
+      print("*", end="")
+    elif y == 2:
+      print("=", end="")
+    else:
+      print(".", end="")
+  print()

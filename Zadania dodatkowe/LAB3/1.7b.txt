@@ -1,0 +1,26 @@
+import random
+
+import string
+
+n = int(input("Podaj liczbę n: "))
+x = int(input("Podaj liczbę x: "))
+
+lista = []
+
+for i in range(n):
+  dlugosc = random.randint(1, x)
+  ciag = ""
+  for j in range(dlugosc):
+    litera = random.choice(string.ascii_lowercase)
+    ciag += litera
+  lista.append(ciag)
+
+print("Utworzona lista to:")
+print(lista)
+
+ilosc = 0
+for ciag in lista:
+  ilosc += ciag.count('k')
+print("Ilość liter 'k' w liście to:", ilosc)
+
+

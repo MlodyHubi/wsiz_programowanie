@@ -1,0 +1,6 @@
+ciag = input("Podaj ciąg znaków: ")
+
+if ciag == ciag[::-1]:
+  print("Ciąg znaków jest palindromem.")
+else:
+  print("Ciąg znaków nie jest palindromem.")

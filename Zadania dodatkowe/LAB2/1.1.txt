@@ -1,0 +1,13 @@
+n = int(input("Podaj liczbę studentów: "))
+
+total = 0.0
+count = 0
+
+while count < n:
+  points = float(input(f"Podaj liczbę punktów dla studenta {count+1}: "))
+  total += points
+  count += 1
+
+average = total / count
+
+print(f"Średnia liczba punktów w grupie to {average}")

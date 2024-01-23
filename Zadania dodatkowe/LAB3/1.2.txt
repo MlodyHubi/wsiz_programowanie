@@ -1,0 +1,6 @@
+zdanie = input("Podaj zdanie: ")
+
+wynik = zdanie[::2]
+
+print("Zdanie po usunięciu znaków o nieparzystych indeksach:")
+print(wynik)

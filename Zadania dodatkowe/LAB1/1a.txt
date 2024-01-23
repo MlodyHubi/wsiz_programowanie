@@ -1,0 +1,13 @@
+# Get user input
+x = float(input("Podaj wartość argumentu x: "))
+
+# Calculate function value based on conditions
+if x > 0:
+    ax = 2 * x
+elif x == 0:
+    ax = 0
+else: # when x < 0
+    ax = -3 * x
+
+# Print result
+print(f"Wartość funkcji a(x) dla x={x} wynosi {ax}")

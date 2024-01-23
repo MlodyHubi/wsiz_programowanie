@@ -1,0 +1,10 @@
+n = int(input("Podaj liczbę n: "))
+
+wynik = []
+
+for i in range(0, len(lista), n):
+  podlista = lista[i:i+n]
+  wynik.append(podlista)
+
+print("Lista podzielona na podlisty co n-ty element:")
+print(wynik)

@@ -1,0 +1,15 @@
+import math
+
+while True:
+  dana = input("Podaj zmienną dana: ")
+  try:
+    dana = int(dana)
+  except ValueError:
+    print("Dziękujemy za skorzystanie z naszej aplikacji.")
+    break
+  if dana < 0:
+    print("Dziękujemy za skorzystanie z naszej aplikacji.")
+    break
+  continue
+  print("To jest liczba.")
+  print(f"Pierwiastek kwadratowy z {dana} to {math.sqrt(dana)}.")

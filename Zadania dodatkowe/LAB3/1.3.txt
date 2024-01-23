@@ -1,0 +1,14 @@
+zdanie = input("Podaj zdanie: ")
+
+wyrazy = zdanie.split()
+
+wynik = []
+
+for wyraz in wyrazy:
+  wyraz = wyraz.capitalize()
+  wynik.append(wyraz)
+
+wynik = " ".join(wynik)
+
+print("Zdanie po zmianie pierwszych liter na wielkie:")
+print(wynik)

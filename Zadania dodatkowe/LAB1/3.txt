@@ -1,0 +1,14 @@
+def swap_case(mystr):
+  result = ""
+  for char in mystr:
+    if char.isupper():
+      result += char.lower()
+    elif char.islower():
+      result += char.upper()
+    else:
+      result += char
+  return result
+
+name = "JoHn CeNa"
+print(swap_case(name))
+# Wyjście: jOhN cEnA

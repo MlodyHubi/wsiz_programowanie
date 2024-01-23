@@ -1,0 +1,18 @@
+pip install gender-guesser
+
+import gender_guesser.detector as gender
+
+d = gender.Detector()
+
+def okresl_plec(imie):
+  wynik = d.get_gender(imie)
+  if wynik in ["male", "mostly_male"]:
+    return "mężczyzna"
+  elif wynik in ["female", "mostly_female"]:
+    return "kobieta"
+  else:
+    return "nieznana"
+
+imiona = list("Anna,Marek,Julia,Adam,Karolina".split(","))
+
+plec = dict((imie, okresl_plec(imie)) for imie in imiona)

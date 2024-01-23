@@ -1,0 +1,13 @@
+pada = input("Czy pada deszcz? (Tak/Nie) ").lower()
+autobus = input("Czy jest autobus na przystanku? (Tak/Nie) ").lower()
+
+if pada == "tak" and autobus == "tak":
+  print("Weź parasol")
+  print("Dostaniesz się na uczelnie")
+elif pada == "tak" and autobus == "nie":
+  print("Nie dostaniesz się na uczelnię")
+elif pada == "nie" and autobus == "tak":
+  print("Dostaniesz się na uczelnie")
+  print("Miłego dnia i pięknej pogody")
+else:
+  print("Nie podałeś poprawnych danych")
