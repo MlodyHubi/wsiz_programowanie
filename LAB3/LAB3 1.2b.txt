@@ -1,2 +1,0 @@
-letters = [text[6], text[9], text[12], text[1]]
-print("Litery o indeksach 7, 10, 13 i 2 to:", letters)
