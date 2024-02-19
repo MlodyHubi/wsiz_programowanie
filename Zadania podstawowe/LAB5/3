@@ -1,0 +1,10 @@
+import time
+
+sekundy = int(input("Podaj liczbę sekund: "))
+
+while sekundy > 0:
+    print(sekundy, "sekund(y) do końca")
+    time.sleep(1)
+    sekundy -= 1
+
+print("Koniec!")
