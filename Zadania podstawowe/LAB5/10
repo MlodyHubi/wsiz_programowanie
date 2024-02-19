@@ -1,0 +1,29 @@
+import datetime
+
+rok = int(input("Podaj rok: "))
+miesiac = int(input("Podaj miesiąc: "))
+dzien = int(input("Podaj dzień: "))
+
+data = datetime.date(rok, miesiac, dzien)
+
+dzien_roku = data.timetuple().tm_yday
+
+numer_tygodnia = data.isocalendar()[1]
+
+dwa_tygodnie = datetime.timedelta(days=14)
+przed = data - dwa_tygodnie
+po = data + dwa_tygodnie
+
+dzien_tygodnia = data.weekday()
+niedziela = data + datetime.timedelta(days=(6 - dzien_tygodnia) % 7)
+
+biezaca_godzina = datetime.datetime.now().hour
+czas = datetime.datetime(rok, miesiac, dzien, biezaca_godzina)
+unix = czas.timestamp()
+
+print("Dzień roku:", dzien_roku)
+print("Numer tygodnia:", numer_tygodnia)
+print("Data na 2 tygodnie przed:", przed)
+print("Data na 2 tygodnie po:", po)
+print("Data najbliższej niedzieli:", niedziela)
+print("Czas unixowy bieżącej godziny:", unix)
