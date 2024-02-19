@@ -1,0 +1,13 @@
+import math
+
+pierwiastek_81 = math.sqrt(81)
+pierwiastek_810 = math.sqrt(810)
+pierwiastek_sumy = math.sqrt(2) + math.sqrt(3) + math.sqrt(6)
+pierwiastek_ujemny = math.sqrt(-5) 
+pierwiastek_125 = math.sqrt(125)
+
+print("Pierwiastek z 81 to:", pierwiastek_81)
+print("Pierwiastek z 810 to:", pierwiastek_810)
+print("Pierwiastek z 2 plus pierwiastek z 3 plus pierwiastek z 6 to:", pierwiastek_sumy)
+print("Pierwiastek z -5 to:", pierwiastek_ujemny) 
+print("Pierwiastek z 125 to:", pierwiastek_125)
