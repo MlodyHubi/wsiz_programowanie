@@ -1,0 +1,34 @@
+import random
+
+poczatek = int(input("Podaj początek zakresu: "))
+koniec = int(input("Podaj koniec zakresu: "))
+
+if koniec - poczatek < 10:
+    print("Zakres jest za mały, podaj większy.")
+    exit()
+
+liczba = random.randint(poczatek, koniec)
+
+proby = 0
+
+while proby < 3:
+    zgadnij = input("Zgadnij liczbę: ")
+
+    try:
+        zgadnij = int(zgadnij)
+    except ValueError:
+        print("To nie jest liczba, podaj liczbę.")
+        continue
+
+    proby += 1
+
+    if zgadnij == liczba:
+        print("Brawo!")
+        break
+    elif zgadnij < liczba:
+        print("Za mało.")
+    else:
+        print("Za dużo.")
+
+if proby == 3 and zgadnij != liczba:
+    print("Niestety, nie udało ci się. Liczba to:", liczba)
