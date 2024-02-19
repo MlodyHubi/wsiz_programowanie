@@ -1,0 +1,15 @@
+import datetime
+
+ostatnie_lab = datetime.date(2024, 2, 12)
+
+kolokwium = datetime.date(2024, 2, 13)
+
+dzisiaj = datetime.date.today()
+
+dni_od_lab = (dzisiaj - ostatnie_lab).days
+
+dni_do_kol = (kolokwium - dzisiaj).days
+
+print("Od ostatnich laboratoriów minęło", dni_od_lab, "dni.")
+print("Do kolokwium zostało", dni_do_kol, "dni.")
+print("Kolokwium odbędzie się", kolokwium.strftime("%d %B %Y"), "roku.")
