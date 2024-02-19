@@ -1,0 +1,7 @@
+import random
+
+roczniki = [ 1997, 1998, 1999, 2000, 2001, 2002, 2003,]
+
+szczesliwy_rocznik = random.choice(roczniki)
+
+print("Szczęśliwy rocznik to:", szczesliwy_rocznik)
