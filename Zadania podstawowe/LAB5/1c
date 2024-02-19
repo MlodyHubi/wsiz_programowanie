@@ -1,0 +1,10 @@
+
+import random
+
+liczby = list(range(1, 50))
+
+totolotek = random.sample(liczby, 6)
+
+totolotek.sort()
+
+print("Wylosowane liczby to:", totolotek)
