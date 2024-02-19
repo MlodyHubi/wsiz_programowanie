@@ -1,0 +1,26 @@
+import math
+import tuple
+import keyword
+
+math_funcs = []
+tuple_funcs = []
+keyword_funcs = []
+
+for attr in dir(math):
+    if callable(getattr(math, attr)):
+        math_funcs.append(attr)
+
+for attr in dir(tuple):
+    if callable(getattr(tuple, attr)):
+        tuple_funcs.append(attr)
+
+for attr in dir(keyword):
+    if callable(getattr(keyword, attr)):
+        keyword_funcs.append(attr)
+
+print("Funkcje modułu math:")
+print(math_funcs)
+print("Funkcje modułu tuple:")
+print(tuple_funcs)
+print("Funkcje modułu keyword:")
+print(keyword_funcs)
