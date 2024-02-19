@@ -1,0 +1,13 @@
+import random
+import numpy as np
+
+poczatek = int(input("Podaj początek przedziału: "))
+koniec = int(input("Podaj koniec przedziału: "))
+
+krotka = tuple(random.randint(poczatek, koniec) for i in range(10))
+
+print("Wygenerowana krotka to:", krotka)
+
+from scipy.stats import gmean
+
+print("Średnia geometryczna krotki to:", srednia)
