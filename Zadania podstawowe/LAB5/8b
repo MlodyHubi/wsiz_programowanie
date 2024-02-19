@@ -1,0 +1,20 @@
+import math
+
+def triangle_area(a, b, angle):
+    angle = math.radians(angle)
+
+    if a + b <= math.sin(angle) * max(a, b):
+        print("Taki trójkąt nie istnieje.")
+        return None
+
+    area = 0.5 * a * b * math.sin(angle)
+
+    return area
+
+a = float(input("Podaj długość pierwszego boku: "))
+b = float(input("Podaj długość drugiego boku: "))
+angle = float(input("Podaj szerokość kąta pomiędzy nimi (w stopniach): "))
+
+result = triangle_area(a, b, angle)
+if result is not None:
+    print("Pole trójkąta wynosi:", result)
