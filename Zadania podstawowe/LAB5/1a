@@ -1,0 +1,7 @@
+import random
+
+n = 10
+
+szczesliwy_numerek = random.randint(1, n)
+
+print("Szczęśliwy numerek to:", szczesliwy_numerek)
